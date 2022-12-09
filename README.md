@@ -52,6 +52,8 @@ http://localhost:3000/begin-oauth-flow
 
 You can change the path for this route and for the callback near the top of the src/index.js file. (If you change the callback path, you'll need to create a new Custom Application in Memberful and replace the OAuth Identifier with the new one.)
 
+// TODO UPDATE RESULT
+
 If everything works, you'll be asked to sign in (you'll need a member account to sign into), and then you'll end up at the /callback route with the access token and refresh token being displayed. It'll look something like this:
 
 ```javascript
