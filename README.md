@@ -52,12 +52,47 @@ http://localhost:3000/begin-oauth-flow
 
 You can change the path for this route and for the callback near the top of the src/index.js file. (If you change the callback path, you'll need to create a new Custom Application in Memberful and replace the OAuth Identifier with the new one.)
 
-// TODO UPDATE RESULT
-
-If everything works, you'll be asked to sign in (you'll need a member account to sign into), and then you'll end up at the /callback route with the access token and refresh token being displayed. It'll look something like this:
+If everything works, you'll be asked to sign in (you'll need a member account to sign into), and then you'll end up at the /callback route with the member's data being displayed. It'll look something like this:
 
 ```javascript
-{"access_token":"DgavbYyWVK4QXckSSvWvfSpX","expires_in":899,"refresh_token":"FYRQ5BQx9qJC2tyibfPdbzgH","token_type":"bearer"}
+Member's data:
+{
+  "data": {
+    "currentMember": {
+      "id": "2406643",
+      "email": "zamentik@gmail.com",
+      "fullName": "Zam",
+      "subscriptions": [
+        {
+          "active": false,
+          "expiresAt": 1667066915,
+          "plan": {
+            "id": "78645",
+            "name": "Premium Monthly"
+          }
+        },
+        {
+          "active": true,
+          "expiresAt": null,
+          "plan": {
+            "id": "65673",
+            "name": "One time success"
+          }
+        },
+        {
+          "active": false,
+          "expiresAt": 1655999542,
+          "plan": {
+            "id": "62764",
+            "name": "Premium"
+          }
+        }
+      ]
+    }
+  }
+}
 ```
+
+You can also find logs of the access token, refresh token, member's data, and refreshed access token in the console.
 
 Visit [this article](https://memberful.com/help/custom-development-and-api/sign-in-for-apps-via-oauth/#requesting-member-data) to learn about how you can use this access token to fetch the member's data from Memberful's API.
