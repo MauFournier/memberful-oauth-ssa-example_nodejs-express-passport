@@ -5,8 +5,8 @@
  ** app flow to authenticate a user and retrieve their profile information.
  **
  ** This is the flow you would use for a server-side application.
- ** If you're building a client-side NodeJS application, you should
- ** use the Client-side PKCE flow instead.
+ ** If you're building a mobile or Single-Page application, you should
+ ** use the PKCE flow instead.
  **
  ** For more information, check out our documentation:
  ** https://memberful.com/help/custom-development-and-api/sign-in-for-apps-via-oauth/

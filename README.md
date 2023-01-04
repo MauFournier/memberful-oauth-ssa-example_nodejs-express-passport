@@ -1,5 +1,7 @@
 A simple example of Memberful's Server-Side App (SSA) OAuth flow written in NodeJS and Express, using the Passport Authentication library.
 
+Note: If you're building a mobile or Single-Page application, you should use the PKCE flow instead.
+
 ## Installation
 
 Run the following command to install dependencies:
