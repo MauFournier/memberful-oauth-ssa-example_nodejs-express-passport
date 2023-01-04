@@ -2,8 +2,7 @@ A simple example of Memberful's Server-Side App (SSA) OAuth flow written in Node
 
 Note: If you're building a mobile or Single-Page application, you should use the PKCE flow instead.
 
-For more information, check out our documentation:
-https://memberful.com/help/custom-development-and-api/sign-in-for-apps-via-oauth/
+For more information, check out [our documentation.](https://memberful.com/help/custom-development-and-api/sign-in-for-apps-via-oauth/)
 
 ## Installation
 
